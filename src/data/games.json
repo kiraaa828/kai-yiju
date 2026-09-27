@@ -1,0 +1,1221 @@
+[
+  {
+    "id": "two-truths-one-lie",
+    "name": "两真一假",
+    "pitch": "每个人说出三件关于自己的事，其中一件是假的。",
+    "minPlayers": 3,
+    "maxPlayers": 12,
+    "durationMinutes": [
+      10,
+      20
+    ],
+    "venues": [
+      "dorm",
+      "livingRoom",
+      "restaurant",
+      "outdoor"
+    ],
+    "props": [
+      "none"
+    ],
+    "vibes": [
+      "icebreaker",
+      "chat"
+    ],
+    "familiarity": [
+      "low",
+      "medium",
+      "high"
+    ],
+    "aiHost": {
+      "supported": true,
+      "voiceFriendly": true
+    },
+    "rules": [
+      "每个人准备三句关于自己的陈述，其中两句是真的，一句是假的。",
+      "其他人依次猜测哪一句是假的，并简单说明理由。",
+      "所有猜测结束后，由出题者公布答案。"
+    ],
+    "hostSteps": [
+      "确认人数和发言顺序。",
+      "提醒大家不要分享不愿意公开的个人信息。",
+      "每次只让一位玩家出题，其他人依次猜测。",
+      "公布答案后进入下一位玩家。"
+    ],
+    "variations": [
+      "限定主题，例如旅行、童年、学校生活或工作经历。",
+      "增加一轮追问，让猜错的人再问一个只能回答是或否的问题。"
+    ],
+    "safety": [
+      "不要强迫任何人分享隐私。",
+      "玩家可以随时跳过自己的回合。"
+    ],
+    "source": {
+      "type": "traditional",
+      "url": null
+    }
+  },
+  {
+    "id": "story-relay",
+    "name": "故事接龙",
+    "pitch": "每人只说一句话，把一段离谱的故事一起编完整。",
+    "minPlayers": 3,
+    "maxPlayers": 10,
+    "durationMinutes": [
+      10,
+      20
+    ],
+    "venues": [
+      "dorm",
+      "livingRoom",
+      "restaurant",
+      "outdoor"
+    ],
+    "props": [
+      "none"
+    ],
+    "vibes": [
+      "funny",
+      "thinking",
+      "chat"
+    ],
+    "familiarity": [
+      "low",
+      "medium",
+      "high"
+    ],
+    "aiHost": {
+      "supported": true,
+      "voiceFriendly": true
+    },
+    "rules": [
+      "主持人给出一个开局，例如“宿舍门突然被敲响”。",
+      "玩家按顺序每人补充一句话，必须承接上一句话。",
+      "故事进行两到三轮后，由最后一位玩家负责收尾。",
+      "大家投票选出最离谱或最喜欢的一句话。"
+    ],
+    "hostSteps": [
+      "给出一个容易继续的开局。",
+      "按顺序点名，每次只让一位玩家说一句话。",
+      "如果故事卡住，可以补充一个转折词。",
+      "两到三轮后结束故事并进行投票。"
+    ],
+    "variations": [
+      "限定故事类型，例如悬疑、校园、科幻或喜剧。",
+      "每三轮必须出现一个新角色。"
+    ],
+    "safety": [
+      "不要用故事影射或羞辱现实中的人。",
+      "如果内容让人不适，主持人可以立即换一个开局。"
+    ],
+    "source": {
+      "type": "original",
+      "url": null
+    }
+  },
+  {
+    "id": "number-bomb",
+    "name": "数字炸弹",
+    "pitch": "在越来越小的数字范围里轮流猜，猜中炸弹的人接受一个小挑战。",
+    "minPlayers": 4,
+    "maxPlayers": 10,
+    "durationMinutes": [
+      5,
+      15
+    ],
+    "venues": [
+      "dorm",
+      "livingRoom",
+      "restaurant",
+      "outdoor"
+    ],
+    "props": [
+      "none"
+    ],
+    "vibes": [
+      "icebreaker",
+      "funny",
+      "thinking"
+    ],
+    "familiarity": [
+      "low",
+      "medium",
+      "high"
+    ],
+    "aiHost": {
+      "supported": true,
+      "voiceFriendly": true
+    },
+    "rules": [
+      "主持人心中确定一个 1 到 100 之间的数字。",
+      "玩家轮流猜一个数字，主持人提示答案比猜测更大或更小。",
+      "每次猜测后，猜测者成为新的范围边界。",
+      "猜中炸弹的人接受一个轻松、无风险的小挑战。"
+    ],
+    "hostSteps": [
+      "先说明挑战只能是唱歌、模仿动物或回答趣味问题之类的安全内容。",
+      "在心里确定数字，不要写出来。",
+      "每轮提示“大了”或“小了”，并报出剩余范围。",
+      "猜中后换一位玩家重新开始。"
+    ],
+    "variations": [
+      "使用 1 到 50 加快节奏。",
+      "使用 1 到 200 增加悬念。",
+      "让猜中的人指定下一位主持人。"
+    ],
+    "safety": [
+      "挑战必须安全、轻松，不能涉及酒精、体罚或隐私。",
+      "玩家可以拒绝挑战，改为表演一个简单动作。"
+    ],
+    "source": {
+      "type": "traditional",
+      "url": null
+    }
+  },
+  {
+    "id": "action-relay",
+    "name": "动作接龙",
+    "pitch": "记住前面所有人的动作，再不断增加一个自己的动作。",
+    "minPlayers": 4,
+    "maxPlayers": 12,
+    "durationMinutes": [
+      10,
+      20
+    ],
+    "venues": [
+      "dorm",
+      "livingRoom",
+      "outdoor"
+    ],
+    "props": [
+      "none"
+    ],
+    "vibes": [
+      "funny",
+      "active"
+    ],
+    "familiarity": [
+      "medium",
+      "high"
+    ],
+    "aiHost": {
+      "supported": false,
+      "voiceFriendly": false
+    },
+    "rules": [
+      "第一位玩家做一个简单动作。",
+      "下一位玩家重复前面的所有动作，再增加一个新动作。",
+      "忘记动作或顺序错误的人暂时退出本轮，下一位继续。",
+      "最后剩下的玩家成为本轮胜者。"
+    ],
+    "hostSteps": [
+      "先演示一个不危险、不尴尬的动作。",
+      "提醒所有动作都必须简单，并允许玩家跳过低难度版本。",
+      "按顺序让每位玩家重复并增加动作。",
+      "本轮结束后可以换一个主题重新开始。"
+    ],
+    "variations": [
+      "限定为动物动作。",
+      "限定为校园生活动作。",
+      "降低难度，每人只需要记住前三个动作。"
+    ],
+    "safety": [
+      "不要做跳跃、下腰、剧烈奔跑等危险动作。",
+      "身体不适或不方便参与的玩家可以使用手势替代。"
+    ],
+    "source": {
+      "type": "traditional",
+      "url": null
+    }
+  },
+  {
+    "id": "word-association",
+    "name": "词语联想",
+    "pitch": "三秒内说出一个有关联的新词，不能重复，也不能解释。",
+    "minPlayers": 3,
+    "maxPlayers": 10,
+    "durationMinutes": [
+      10,
+      15
+    ],
+    "venues": [
+      "dorm",
+      "livingRoom",
+      "restaurant",
+      "outdoor"
+    ],
+    "props": [
+      "none"
+    ],
+    "vibes": [
+      "thinking",
+      "funny"
+    ],
+    "familiarity": [
+      "low",
+      "medium",
+      "high"
+    ],
+    "aiHost": {
+      "supported": true,
+      "voiceFriendly": true
+    },
+    "rules": [
+      "第一位玩家说出一个词，例如“夏天”。",
+      "下一位玩家在三秒内说出一个与上一词有关联的新词。",
+      "不能重复已经出现过的词，也不能解释关联。",
+      "超时或重复的人留在原位，由下一位玩家重新开始一个词。"
+    ],
+    "hostSteps": [
+      "给出第一个词并开始计时。",
+      "每次只接受一个词，不展开解释。",
+      "关联明显有争议时，交给其他玩家简单投票。",
+      "连续进行五到十轮后结束。"
+    ],
+    "variations": [
+      "限制所有词都属于同一个主题。",
+      "把三秒改为五秒，降低难度。",
+      "要求回答必须与上一词只隔一个联想步骤。"
+    ],
+    "safety": [
+      "出现带有攻击性或让人不适的词时，主持人可以直接跳过。",
+      "允许玩家说“跳过”，不进行惩罚。"
+    ],
+    "source": {
+      "type": "original",
+      "url": null
+    }
+  },
+  {
+    "id": "name-relay",
+    "name": "名字接龙",
+    "pitch": "用昵称和一个小喜好，把现场每个人的名字连起来。",
+    "minPlayers": 4,
+    "maxPlayers": 12,
+    "durationMinutes": [
+      10,
+      15
+    ],
+    "venues": [
+      "dorm",
+      "livingRoom",
+      "restaurant",
+      "outdoor"
+    ],
+    "props": [
+      "none"
+    ],
+    "vibes": [
+      "icebreaker",
+      "chat"
+    ],
+    "familiarity": [
+      "low",
+      "medium",
+      "high"
+    ],
+    "aiHost": {
+      "supported": true,
+      "voiceFriendly": true
+    },
+    "rules": [
+      "第一位玩家说自己的昵称和一个喜欢的东西。",
+      "下一位先重复前面的内容，再介绍自己。",
+      "每人只能增加一个信息，不能替别人补充。",
+      "完成一轮后，可以让大家尝试复述所有人的名字。"
+    ],
+    "hostSteps": [
+      "先允许大家使用昵称或外号，不要求真实姓名。",
+      "从主持人开始做示范。",
+      "按顺序接力，每位玩家说完后确认下一位。",
+      "一轮结束后随机抽一位玩家复述。"
+    ],
+    "variations": [
+      "把喜欢的东西换成最近做过的一件事。",
+      "增加一个动作，让后面的人同时复述动作。",
+      "降低难度，每人只需重复前两位玩家。"
+    ],
+    "safety": [
+      "不强迫玩家使用真实姓名或公开个人信息。",
+      "玩家可以随时更换自己的昵称。"
+    ],
+    "source": {
+      "type": "traditional",
+      "url": null
+    }
+  },
+  {
+    "id": "pair-match",
+    "name": "默契碰碰车",
+    "pitch": "两人同时说出同一答案，看看谁和谁最有默契。",
+    "minPlayers": 4,
+    "maxPlayers": 12,
+    "durationMinutes": [
+      10,
+      20
+    ],
+    "venues": [
+      "dorm",
+      "livingRoom",
+      "restaurant",
+      "outdoor"
+    ],
+    "props": [
+      "none"
+    ],
+    "vibes": [
+      "icebreaker",
+      "funny",
+      "chat"
+    ],
+    "familiarity": [
+      "low",
+      "medium",
+      "high"
+    ],
+    "aiHost": {
+      "supported": true,
+      "voiceFriendly": true
+    },
+    "rules": [
+      "玩家两两一组，也可以三人一组。",
+      "主持人给出一个类别，例如早餐、颜色或旅行城市。",
+      "每组一起数三、二、一，然后同时说出一个答案。",
+      "答案相同得一分，进行五轮后分数最高的一组获胜。"
+    ],
+    "hostSteps": [
+      "先说明同义词也算匹配，但答案必须同时说出。",
+      "给出一个容易联想到多个答案的类别。",
+      "带大家数三、二、一后听答案。",
+      "每组完成五轮后公布分数。"
+    ],
+    "variations": [
+      "让每组提前约定一个不能说的答案。",
+      "使用更具体的类别，例如宿舍里最常见的物品。",
+      "三人组只要两人答案相同即可得分。"
+    ],
+    "safety": [
+      "不要用个人隐私或身材、家庭情况作为题目。",
+      "答不出来时可以跳过，不扣分。"
+    ],
+    "source": {
+      "type": "original",
+      "url": null
+    }
+  },
+  {
+    "id": "five-second-challenge",
+    "name": "五秒挑战",
+    "pitch": "五秒内说出三个符合类别的东西，说满就算通过。",
+    "minPlayers": 3,
+    "maxPlayers": 10,
+    "durationMinutes": [
+      5,
+      10
+    ],
+    "venues": [
+      "dorm",
+      "livingRoom",
+      "restaurant",
+      "outdoor"
+    ],
+    "props": [
+      "none"
+    ],
+    "vibes": [
+      "icebreaker",
+      "funny",
+      "thinking"
+    ],
+    "familiarity": [
+      "low",
+      "medium",
+      "high"
+    ],
+    "aiHost": {
+      "supported": true,
+      "voiceFriendly": true
+    },
+    "rules": [
+      "主持人给出一个类别。",
+      "玩家需要在五秒内说出三个符合类别的答案。",
+      "答案不能重复，也不必按照固定顺序。",
+      "完成后换下一位，答不满也可以直接跳过。"
+    ],
+    "hostSteps": [
+      "选择容易理解但答案较多的类别。",
+      "确认玩家准备好后开始计时。",
+      "只记录答案数量，不评价答案质量。",
+      "每位玩家轮到后换一个类别。"
+    ],
+    "variations": [
+      "把三样改为五样，增加难度。",
+      "限定答案必须与大学生活有关。",
+      "允许其他玩家提示一个答案。"
+    ],
+    "safety": [
+      "不使用会让玩家尴尬的私人问题。",
+      "允许玩家说“跳过”，不进行惩罚。"
+    ],
+    "source": {
+      "type": "traditional",
+      "url": null
+    }
+  },
+  {
+    "id": "category-chain",
+    "name": "类别说不出",
+    "pitch": "围绕一个类别轮流报答案，重复或卡住的人淘汰。",
+    "minPlayers": 3,
+    "maxPlayers": 12,
+    "durationMinutes": [
+      10,
+      15
+    ],
+    "venues": [
+      "dorm",
+      "livingRoom",
+      "restaurant",
+      "outdoor"
+    ],
+    "props": [
+      "none"
+    ],
+    "vibes": [
+      "funny",
+      "thinking"
+    ],
+    "familiarity": [
+      "low",
+      "medium",
+      "high"
+    ],
+    "aiHost": {
+      "supported": true,
+      "voiceFriendly": true
+    },
+    "rules": [
+      "主持人确定一个类别，例如水果或电影类型。",
+      "玩家按顺序说出符合类别的答案。",
+      "答案不能重复，超过五秒没有回答的人暂时退出。",
+      "最后剩下的玩家获胜，再换类别开始新一轮。"
+    ],
+    "hostSteps": [
+      "选择一个大家都能说出几个答案的类别。",
+      "明确发言顺序，每次只统计一个答案。",
+      "出现争议答案时，让其他玩家快速投票决定。",
+      "淘汰玩家仍然可以参与讨论，但不继续答题。"
+    ],
+    "variations": [
+      "使用两个类别交叉筛选，例如“可以吃并且是圆形”。",
+      "允许说出答案后唱一句或做一个动作。",
+      "使用团队赛，每队轮流派一人回答。"
+    ],
+    "safety": [
+      "不要用政治、宗教或个人隐私作为类别。",
+      "淘汰机制保持轻松，不让玩家接受惩罚。"
+    ],
+    "source": {
+      "type": "traditional",
+      "url": null
+    }
+  },
+  {
+    "id": "word-chain",
+    "name": "词语接龙",
+    "pitch": "下一个人必须用上一个词的最后一个字或相同读音开头。",
+    "minPlayers": 3,
+    "maxPlayers": 12,
+    "durationMinutes": [
+      10,
+      20
+    ],
+    "venues": [
+      "dorm",
+      "livingRoom",
+      "restaurant",
+      "outdoor"
+    ],
+    "props": [
+      "none"
+    ],
+    "vibes": [
+      "thinking",
+      "chat"
+    ],
+    "familiarity": [
+      "low",
+      "medium",
+      "high"
+    ],
+    "aiHost": {
+      "supported": true,
+      "voiceFriendly": true
+    },
+    "rules": [
+      "第一位玩家说出一个词语。",
+      "下一位必须说出以上一个词最后一个字开头的词语。",
+      "同音字可以接受，但已经出现过的词不能重复。",
+      "五秒内没有答案的人重新开始一个新词。"
+    ],
+    "hostSteps": [
+      "先说明可以使用同音字，避免难度过高。",
+      "给出第一个简单词语。",
+      "每次只接受一个答案，并确认首字是否符合。",
+      "连续进行五到十轮后结束。"
+    ],
+    "variations": [
+      "限定所有词都属于食物、地名或动词。",
+      "把五秒改为十秒，降低难度。",
+      "使用团队模式，全队可以一起提示。"
+    ],
+    "safety": [
+      "出现带有攻击性的词语时，主持人可以直接跳过。",
+      "允许玩家说“换一个词”，不进行惩罚。"
+    ],
+    "source": {
+      "type": "traditional",
+      "url": null
+    }
+  },
+  {
+    "id": "charades",
+    "name": "你比我猜",
+    "pitch": "一个人只靠动作表演，队友在规定时间内猜出词语。",
+    "minPlayers": 4,
+    "maxPlayers": 12,
+    "durationMinutes": [
+      10,
+      20
+    ],
+    "venues": [
+      "dorm",
+      "livingRoom",
+      "restaurant",
+      "outdoor"
+    ],
+    "props": [
+      "none"
+    ],
+    "vibes": [
+      "funny",
+      "active"
+    ],
+    "familiarity": [
+      "medium",
+      "high"
+    ],
+    "aiHost": {
+      "supported": false,
+      "voiceFriendly": false
+    },
+    "rules": [
+      "玩家分成两队，每队选出一名表演者。",
+      "表演者看一个词后不能说话，只能使用动作提示。",
+      "队友在一分钟内猜出答案，猜对得一分。",
+      "时间结束后换另一队，进行多轮后分数高者获胜。"
+    ],
+    "hostSteps": [
+      "先准备只给表演者看的词语。",
+      "说明不能说出词语中的任何一个字。",
+      "控制一分钟倒计时并在猜对后立即计分。",
+      "每轮结束更换表演者。"
+    ],
+    "variations": [
+      "禁止使用手指数量提示。",
+      "允许表演者发出动物声音但不能说话。",
+      "使用团队共同表演模式。"
+    ],
+    "safety": [
+      "不要要求玩家表演危险动作。",
+      "不方便做动作的玩家可以改为描述但不能说出关键词。"
+    ],
+    "source": {
+      "type": "traditional",
+      "url": null
+    }
+  },
+  {
+    "id": "draw-and-guess",
+    "name": "你画我猜",
+    "pitch": "用最简单的线条画出一个词，看队友能不能猜出来。",
+    "minPlayers": 4,
+    "maxPlayers": 12,
+    "durationMinutes": [
+      15,
+      25
+    ],
+    "venues": [
+      "dorm",
+      "livingRoom",
+      "restaurant"
+    ],
+    "props": [
+      "paperPen"
+    ],
+    "vibes": [
+      "funny",
+      "active",
+      "thinking"
+    ],
+    "familiarity": [
+      "low",
+      "medium",
+      "high"
+    ],
+    "aiHost": {
+      "supported": false,
+      "voiceFriendly": false
+    },
+    "rules": [
+      "玩家分成两队，每队选出一名画手。",
+      "画手看词后在一分钟内作画，不能写字或说话。",
+      "队友根据画面猜词，猜对得一分。",
+      "时间结束后换另一队，多轮后分数高者获胜。"
+    ],
+    "hostSteps": [
+      "给画手准备只显示给他的词语。",
+      "说明不能写数字、文字或同音提示。",
+      "控制倒计时并在猜对时计分。",
+      "每轮更换画手和词语。"
+    ],
+    "variations": [
+      "只允许画五条线。",
+      "只允许使用一种颜色。",
+      "允许画手选择提示一个字。"
+    ],
+    "safety": [
+      "不使用需要暴露个人信息的词。",
+      "没有纸笔时可以改用手机绘图应用。"
+    ],
+    "source": {
+      "type": "traditional",
+      "url": null
+    }
+  },
+  {
+    "id": "emotion-reading",
+    "name": "情绪朗读",
+    "pitch": "同一句普通的话，用奇怪的情绪读出来，让别人猜。",
+    "minPlayers": 4,
+    "maxPlayers": 12,
+    "durationMinutes": [
+      10,
+      20
+    ],
+    "venues": [
+      "dorm",
+      "livingRoom",
+      "restaurant",
+      "outdoor"
+    ],
+    "props": [
+      "none"
+    ],
+    "vibes": [
+      "funny",
+      "active"
+    ],
+    "familiarity": [
+      "low",
+      "medium",
+      "high"
+    ],
+    "aiHost": {
+      "supported": true,
+      "voiceFriendly": true
+    },
+    "rules": [
+      "主持人给出一句普通台词，例如“今天的天气不错”。",
+      "玩家抽取一种情绪或身份，用那种方式朗读台词。",
+      "其他玩家猜他表达的是哪种情绪或身份。",
+      "猜对的人获得一分，也可以直接进行下一轮。"
+    ],
+    "hostSteps": [
+      "准备情绪词和普通台词。",
+      "让玩家选择或随机抽取一种情绪。",
+      "听完朗读后，按顺序邀请两到三人猜答案。",
+      "公布答案后换下一位玩家。"
+    ],
+    "variations": [
+      "使用影视角色、机器人或新闻主播等身份。",
+      "要求两个人用不同情绪对话。",
+      "使用方言或唱歌方式朗读。"
+    ],
+    "safety": [
+      "不要模仿真实认识的人来嘲笑对方。",
+      "玩家可以拒绝特定情绪或身份。"
+    ],
+    "source": {
+      "type": "original",
+      "url": null
+    }
+  },
+  {
+    "id": "reverse-command",
+    "name": "反着来",
+    "pitch": "主持人说什么，玩家就要做出相反的动作。",
+    "minPlayers": 4,
+    "maxPlayers": 12,
+    "durationMinutes": [
+      10,
+      15
+    ],
+    "venues": [
+      "dorm",
+      "livingRoom",
+      "restaurant",
+      "outdoor"
+    ],
+    "props": [
+      "none"
+    ],
+    "vibes": [
+      "funny",
+      "active"
+    ],
+    "familiarity": [
+      "low",
+      "medium",
+      "high"
+    ],
+    "aiHost": {
+      "supported": true,
+      "voiceFriendly": true
+    },
+    "rules": [
+      "主持人发出简单指令，例如“举起左手”。",
+      "玩家必须做出相反动作，例如举起右手。",
+      "做错或反应太慢的人暂时退出本轮。",
+      "最后剩下的玩家获胜，然后开始新一轮。"
+    ],
+    "hostSteps": [
+      "先演示一组正向和反向动作。",
+      "从慢速开始，逐步加快语速。",
+      "每次只发一个指令，确认动作完成后继续。",
+      "出现争议时，由其他玩家快速投票决定。"
+    ],
+    "variations": [
+      "让一位玩家代替主持人发指令。",
+      "加入词语反向，例如说“安静”时大家欢呼。",
+      "使用团队积分制，不进行淘汰。"
+    ],
+    "safety": [
+      "避免跳跃、奔跑和需要平衡的危险动作。",
+      "身体不方便的玩家可以使用手势替代。"
+    ],
+    "source": {
+      "type": "original",
+      "url": null
+    }
+  },
+  {
+    "id": "two-sides-debate",
+    "name": "两派辩论",
+    "pitch": "面对一个无厘头选择题，双方用十五秒为自己的立场辩护。",
+    "minPlayers": 4,
+    "maxPlayers": 12,
+    "durationMinutes": [
+      15,
+      20
+    ],
+    "venues": [
+      "dorm",
+      "livingRoom",
+      "restaurant",
+      "outdoor"
+    ],
+    "props": [
+      "none"
+    ],
+    "vibes": [
+      "funny",
+      "thinking",
+      "chat"
+    ],
+    "familiarity": [
+      "low",
+      "medium",
+      "high"
+    ],
+    "aiHost": {
+      "supported": true,
+      "voiceFriendly": true
+    },
+    "rules": [
+      "主持人给出一个二选一问题，例如“奶茶必须加珍珠吗”。",
+      "玩家选择立场，分成两派。",
+      "每一派轮流派代表进行十五秒发言。",
+      "双方完成后，其余玩家投票支持更有说服力的一方。"
+    ],
+    "hostSteps": [
+      "选择一个轻松、没有标准答案的问题。",
+      "让玩家选择立场并分成两组。",
+      "控制每位代表十五秒发言时间。",
+      "每轮结束后换一个辩题。"
+    ],
+    "variations": [
+      "要求玩家支持自己并不认同的立场。",
+      "增加自由辩论三十秒。",
+      "让获胜队伍负责提出下一题。"
+    ],
+    "safety": [
+      "辩题必须轻松，不涉及歧视、政治或真实人际矛盾。",
+      "不要针对个人经历进行攻击。"
+    ],
+    "source": {
+      "type": "original",
+      "url": null
+    }
+  },
+  {
+    "id": "group-count",
+    "name": "集体报数",
+    "pitch": "不商量顺序，从一数到目标数字，看看大家能不能一次成功。",
+    "minPlayers": 4,
+    "maxPlayers": 12,
+    "durationMinutes": [
+      5,
+      10
+    ],
+    "venues": [
+      "dorm",
+      "livingRoom",
+      "restaurant",
+      "outdoor"
+    ],
+    "props": [
+      "none"
+    ],
+    "vibes": [
+      "icebreaker",
+      "active",
+      "thinking"
+    ],
+    "familiarity": [
+      "low",
+      "medium",
+      "high"
+    ],
+    "aiHost": {
+      "supported": true,
+      "voiceFriendly": false
+    },
+    "rules": [
+      "玩家不使用固定发言顺序，从一依次报到目标数字。",
+      "同一时间只能有一个人说出当前数字。",
+      "如果两个人同时开口，或者数字说错，就从一重新开始。",
+      "成功报到目标数字后，可以增加难度再试一次。"
+    ],
+    "hostSteps": [
+      "先确定目标数字，第一轮建议等于玩家人数。",
+      "提醒大家不能约定顺序，也不能用手势互相指定。",
+      "仔细听是否出现重复或错误，必要时喊“重来”。",
+      "成功后让大家讨论刚才形成的默契。"
+    ],
+    "variations": [
+      "闭眼进行，增加判断难度。",
+      "把目标数字翻倍。",
+      "规定每个人必须至少开口一次。"
+    ],
+    "safety": [
+      "不惩罚报错的人，重来本身就是游戏过程。",
+      "玩家如果不想闭眼，可以保持睁眼参与。"
+    ],
+    "source": {
+      "type": "traditional",
+      "url": null
+    }
+  },
+  {
+    "id": "card-story",
+    "name": "抽牌编故事",
+    "pitch": "用扑克牌的花色决定故事方向，每人补一句，把它编成完整故事。",
+    "minPlayers": 4,
+    "maxPlayers": 12,
+    "durationMinutes": [
+      10,
+      20
+    ],
+    "venues": [
+      "dorm",
+      "livingRoom",
+      "restaurant",
+      "outdoor"
+    ],
+    "props": [
+      "cards"
+    ],
+    "vibes": [
+      "funny",
+      "thinking",
+      "chat"
+    ],
+    "familiarity": [
+      "medium",
+      "high"
+    ],
+    "aiHost": {
+      "supported": true,
+      "voiceFriendly": true
+    },
+    "rules": [
+      "第一位玩家抽一张牌，根据花色决定故事类型。",
+      "红桃代表感情，黑桃代表悬疑，方块代表财富，梅花代表冒险。",
+      "玩家按顺序每人补充一句话，不能否定前面的内容。",
+      "故事进行两到三轮后，由最后一位玩家负责收尾。"
+    ],
+    "hostSteps": [
+      "先说明四种花色分别代表的故事方向。",
+      "让第一位玩家抽牌并说出花色。",
+      "按顺序点名，每人只补充一句。",
+      "故事结束后投票选出最喜欢的转折。"
+    ],
+    "variations": [
+      "使用牌面数字决定本轮必须出现几名角色。",
+      "抽到 J、Q、K 时必须增加一个反转。",
+      "不使用扑克牌，改为主持人随机决定故事类型。"
+    ],
+    "safety": [
+      "不要把故事引向真实的家庭或感情隐私。",
+      "出现让人不适的内容时，主持人立即换一个方向。"
+    ],
+    "source": {
+      "type": "original",
+      "url": null
+    }
+  },
+  {
+    "id": "yes-or-no",
+    "name": "是或不是",
+    "pitch": "提问者只能得到是、不是或无关的回答，在二十问内猜出答案。",
+    "minPlayers": 3,
+    "maxPlayers": 12,
+    "durationMinutes": [
+      10,
+      20
+    ],
+    "venues": [
+      "dorm",
+      "livingRoom",
+      "restaurant",
+      "outdoor"
+    ],
+    "props": [
+      "none"
+    ],
+    "vibes": [
+      "thinking",
+      "funny"
+    ],
+    "familiarity": [
+      "low",
+      "medium",
+      "high"
+    ],
+    "aiHost": {
+      "supported": true,
+      "voiceFriendly": true
+    },
+    "rules": [
+      "主持人或一位玩家在心中选定一个人物、物品或地点。",
+      "其他玩家轮流提出只能回答是或不是的问题。",
+      "回答者只能回答“是”“不是”或“无关”。",
+      "其他玩家需要在二十个问题内猜出答案。"
+    ],
+    "hostSteps": [
+      "先确认答案范围，例如人物、物品或地点。",
+      "每轮只允许一位玩家提问，避免同时发问。",
+      "回答时不要额外提示，除非大家同意降低难度。",
+      "达到二十问或猜中后公布答案。"
+    ],
+    "variations": [
+      "把二十问改为十问。",
+      "所有问题必须使用同一种类型，例如只能问用途。",
+      "使用团队模式，每队轮流提问。"
+    ],
+    "safety": [
+      "不要选择真实在场玩家的隐私信息作为答案。",
+      "答案范围要健康、可公开讨论。"
+    ],
+    "source": {
+      "type": "traditional",
+      "url": null
+    }
+  },
+  {
+    "id": "seven-count",
+    "name": "数字七令",
+    "pitch": "按顺序报数，但遇到七的倍数或含七的数字必须拍手。",
+    "minPlayers": 4,
+    "maxPlayers": 12,
+    "durationMinutes": [
+      5,
+      15
+    ],
+    "venues": [
+      "dorm",
+      "livingRoom",
+      "restaurant",
+      "outdoor"
+    ],
+    "props": [
+      "none"
+    ],
+    "vibes": [
+      "funny",
+      "thinking"
+    ],
+    "familiarity": [
+      "low",
+      "medium",
+      "high"
+    ],
+    "aiHost": {
+      "supported": true,
+      "voiceFriendly": true
+    },
+    "rules": [
+      "玩家按顺序从一报数。",
+      "遇到七的倍数或数字中包含七时，不报数字，改为拍手。",
+      "报错或该拍手却报数字时，从一重新开始。",
+      "全组成功数到五十即可完成挑战。"
+    ],
+    "hostSteps": [
+      "先演示几个数字，例如七、十四、十七。",
+      "确定发言顺序后从一正式开始。",
+      "出错时立即喊停，并从上一位确认正确答案。",
+      "成功后可以从昨天出错的数字继续挑战。"
+    ],
+    "variations": [
+      "同时把包含四的数字也改为拍手。",
+      "加快报数速度。",
+      "使用两队比赛，出错次数少的队伍获胜。"
+    ],
+    "safety": [
+      "不惩罚报错的玩家，可以改成全组重新开始。",
+      "如果玩家不熟悉数学规则，可以放慢速度。"
+    ],
+    "source": {
+      "type": "traditional",
+      "url": null
+    }
+  },
+  {
+    "id": "improv-scene",
+    "name": "情景即兴",
+    "pitch": "拿到一个场景和角色，不等准备直接演两分钟。",
+    "minPlayers": 3,
+    "maxPlayers": 12,
+    "durationMinutes": [
+      15,
+      25
+    ],
+    "venues": [
+      "dorm",
+      "livingRoom",
+      "restaurant"
+    ],
+    "props": [
+      "none"
+    ],
+    "vibes": [
+      "funny",
+      "active",
+      "chat"
+    ],
+    "familiarity": [
+      "medium",
+      "high"
+    ],
+    "aiHost": {
+      "supported": true,
+      "voiceFriendly": true
+    },
+    "rules": [
+      "主持人给出一个场景和两到三个角色。",
+      "参与者直接开始表演，不需要提前排练。",
+      "其他玩家可以给出一个新条件，例如突然停电。",
+      "表演满两分钟或自然结束后，换下一组。"
+    ],
+    "hostSteps": [
+      "选择简单、生活化的场景，例如错过末班车。",
+      "分配角色时允许玩家主动交换或放弃。",
+      "表演过程中只补充新条件，不替玩家设计台词。",
+      "两分钟后喊停，并让观众说一个最喜欢的瞬间。"
+    ],
+    "variations": [
+      "所有台词必须押韵。",
+      "每个人只能说三个字以内的句子。",
+      "指定一个不能说出口的词。"
+    ],
+    "safety": [
+      "场景必须轻松，不涉及霸凌、歧视和真实冲突。",
+      "玩家可以随时退出角色，其他人不能强迫继续。"
+    ],
+    "source": {
+      "type": "original",
+      "url": null
+    }
+  },
+  {
+    "id": "playlist-attack",
+    "name": "袭击你的歌单",
+    "pitch": "主持人播放歌单，两队抢答歌曲名和作者，先让全队成员各答对一次获胜。",
+    "minPlayers": 4,
+    "maxPlayers": 12,
+    "durationMinutes": [
+      15,
+      30
+    ],
+    "venues": [
+      "dorm",
+      "livingRoom"
+    ],
+    "props": [
+      "none"
+    ],
+    "vibes": [
+      "funny",
+      "active",
+      "thinking",
+      "chat"
+    ],
+    "familiarity": [
+      "medium",
+      "high"
+    ],
+    "aiHost": {
+      "supported": false,
+      "voiceFriendly": false
+    },
+    "rules": [
+      "玩家分成两队，各自取一个队名。",
+      "主持人从自己的歌单中随机播放歌曲，音乐开始后两队可以抢答。",
+      "抢答时先说“某队回答”，再说歌曲名和作者。",
+      "答错后另一队可以继续回答，答对的队伍有一位成员完成挑战并退出本轮抢答。",
+      "当一队所有成员都各答对过一次，该队获胜。"
+    ],
+    "hostSteps": [
+      "确认两队人数和队名，并约定抢答口令。",
+      "主持人准备一个包含不同年代和风格的歌单，不需要公开答案列表。",
+      "每首歌只播放十到二十秒，听到抢答口令后暂停音乐。",
+      "答对后记录是哪位成员答对，答错则让另一队继续。",
+      "一队所有成员都答对后结束比赛。"
+    ],
+    "variations": [
+      "降低难度，只回答歌曲名或只回答作者。",
+      "增加“前奏版”，只播放五秒前奏。",
+      "如果两队都答错，主持人公布答案后换下一首。"
+    ],
+    "safety": [
+      "歌单由主持人自行选择，项目不分发或存储受版权保护的音频。",
+      "避免使用带有歧视、侮辱或露骨内容的歌曲。",
+      "不强迫玩家唱歌，也不因为答错进行惩罚。"
+    ],
+    "source": {
+      "type": "original",
+      "url": null
+    }
+  }
+]

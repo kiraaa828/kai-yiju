@@ -1,0 +1,290 @@
+[
+  {
+    "id": "compliment-relay",
+    "title": "优点接力",
+    "prompt": "向左边的玩家说出一个真实、具体、和外表无关的优点，每人说完后换下一位。",
+    "category": "icebreaker",
+    "intensity": 1,
+    "durationMinutes": 2,
+    "props": [
+      "none"
+    ],
+    "safety": "只说不涉及外貌、身材和隐私的优点，可以跳过。"
+  },
+  {
+    "id": "emoji-face",
+    "title": "表情包模仿",
+    "prompt": "做一个夸张但不冒犯任何人的表情，让其他人猜它像哪一种常用表情包。",
+    "category": "performance",
+    "intensity": 1,
+    "durationMinutes": 1,
+    "props": [
+      "none"
+    ],
+    "safety": "不模仿在场玩家，不嘲笑他人的长相或说话方式。"
+  },
+  {
+    "id": "stage-name",
+    "title": "舞台名介绍",
+    "prompt": "给自己取一个舞台名，并用这个名字说一句自我介绍。",
+    "category": "icebreaker",
+    "intensity": 1,
+    "durationMinutes": 1,
+    "props": [
+      "none"
+    ],
+    "safety": "不要求公开真实姓名、学校、工作单位和家庭信息。"
+  },
+  {
+    "id": "weather-mood",
+    "title": "心情天气预报",
+    "prompt": "用今天的天气来形容现在的心情，只说一句，不需要解释原因。",
+    "category": "talk",
+    "intensity": 1,
+    "durationMinutes": 1,
+    "props": [
+      "none"
+    ],
+    "safety": "不想分享真实心情时，可以随便编一个天气。"
+  },
+  {
+    "id": "mini-talent",
+    "title": "三秒才艺",
+    "prompt": "展示一个三秒内能完成的小才艺，例如响指、平衡一本书或模仿一种动物。",
+    "category": "performance",
+    "intensity": 2,
+    "durationMinutes": 1,
+    "props": [
+      "none"
+    ],
+    "safety": "不要求危险动作、弯腰、跳跃或高难度体能动作。"
+  },
+  {
+    "id": "name-gesture",
+    "title": "名字加动作",
+    "prompt": "说出自己的昵称，同时做一个简单动作，后面的人重复动作再介绍自己。",
+    "category": "icebreaker",
+    "intensity": 1,
+    "durationMinutes": 3,
+    "props": [
+      "none"
+    ],
+    "safety": "动作必须简单，身体不方便的玩家可以用手势或声音替代。"
+  },
+  {
+    "id": "childhood-snack",
+    "title": "童年零食回忆",
+    "prompt": "说出一种小时候常吃的零食，并说一句最喜欢它的原因。",
+    "category": "talk",
+    "intensity": 1,
+    "durationMinutes": 2,
+    "props": [
+      "none"
+    ],
+    "safety": "不追问家庭情况、经济条件或其他私人经历。"
+  },
+  {
+    "id": "virtual-postcard",
+    "title": "虚拟明信片",
+    "prompt": "给左边的人写一句虚拟明信片，只能写祝福、感谢或轻松玩笑。",
+    "category": "talk",
+    "intensity": 1,
+    "durationMinutes": 2,
+    "props": [
+      "none"
+    ],
+    "safety": "不写暧昧、嘲讽或让人误解的私人内容。"
+  },
+  {
+    "id": "group-freeze",
+    "title": "集体定格",
+    "prompt": "主持人喊出一个场景，例如“赶末班车”，全组在五秒内摆出一个定格画面。",
+    "category": "performance",
+    "intensity": 2,
+    "durationMinutes": 2,
+    "props": [
+      "none"
+    ],
+    "safety": "不要求奔跑、抱人、蹲跳或保持困难姿势。"
+  },
+  {
+    "id": "sports-commentary",
+    "title": "生活解说员",
+    "prompt": "用体育解说的语气，解说一位玩家喝水、拿纸巾或坐下等普通动作。",
+    "category": "performance",
+    "intensity": 2,
+    "durationMinutes": 2,
+    "props": [
+      "none"
+    ],
+    "safety": "只解说动作，不评价玩家的身体、外貌或能力。"
+  },
+  {
+    "id": "ad-pitch",
+    "title": "十五秒广告",
+    "prompt": "从现场选一个普通物品，用十五秒为它设计一段夸张但友善的广告。",
+    "category": "creative",
+    "intensity": 2,
+    "durationMinutes": 2,
+    "props": [
+      "none"
+    ],
+    "safety": "不拿他人的私人物品做素材，不使用冒犯性广告话术。"
+  },
+  {
+    "id": "team-slogan",
+    "title": "队呼创作",
+    "prompt": "给大家所在的小组编一个八字以内的队名和一句队呼，全组一起喊一次。",
+    "category": "team",
+    "intensity": 1,
+    "durationMinutes": 3,
+    "props": [
+      "none"
+    ],
+    "safety": "队名和队呼不能包含攻击、歧视或羞辱性词语。"
+  },
+  {
+    "id": "accent-reading",
+    "title": "方言朗读",
+    "prompt": "用自己愿意展示的方言或口音，读一句普通的话，例如“今天大家玩得很开心”。",
+    "category": "performance",
+    "intensity": 2,
+    "durationMinutes": 1,
+    "props": [
+      "none"
+    ],
+    "safety": "不取笑任何方言或口音，不愿意时可以直接跳过。"
+  },
+  {
+    "id": "hum-a-song",
+    "title": "哼歌猜猜",
+    "prompt": "只哼一首歌的旋律，不唱歌词，让其他人猜歌曲名。",
+    "category": "performance",
+    "intensity": 2,
+    "durationMinutes": 2,
+    "props": [
+      "none"
+    ],
+    "safety": "不强迫开口唱歌，可以只用拍手或口哨表现旋律。"
+  },
+  {
+    "id": "slow-motion",
+    "title": "慢动作大师",
+    "prompt": "选择一个简单动作，例如拿水杯或坐下，用慢动作完成一遍。",
+    "category": "performance",
+    "intensity": 1,
+    "durationMinutes": 1,
+    "props": [
+      "none"
+    ],
+    "safety": "动作必须简单安全，不使用需要平衡或剧烈用力的动作。"
+  },
+  {
+    "id": "talk-show-host",
+    "title": "采访主持人",
+    "prompt": "像访谈节目一样，采访右边的人一个轻松问题，例如“最近最期待什么”。",
+    "category": "talk",
+    "intensity": 1,
+    "durationMinutes": 2,
+    "props": [
+      "none"
+    ],
+    "safety": "问题不能涉及收入、感情、家庭矛盾、身体和外貌。"
+  },
+  {
+    "id": "next-song",
+    "title": "点歌权",
+    "prompt": "获得下一轮点歌权，但只能从主持人给出的三个选项中选一个。",
+    "category": "team",
+    "intensity": 1,
+    "durationMinutes": 1,
+    "props": [
+      "none"
+    ],
+    "safety": "不播放含有歧视、侮辱或露骨内容的歌曲。"
+  },
+  {
+    "id": "lucky-high-five",
+    "title": "幸运击掌",
+    "prompt": "选另外两位玩家，一起完成一次整齐的击掌，并喊一句队呼。",
+    "category": "team",
+    "intensity": 1,
+    "durationMinutes": 1,
+    "props": [
+      "none"
+    ],
+    "safety": "动作保持轻柔，任何玩家都可以改为挥手。"
+  },
+  {
+    "id": "object-story",
+    "title": "物品故事",
+    "prompt": "选择一个现场物品，用三句话编一个和它有关的短故事。",
+    "category": "creative",
+    "intensity": 2,
+    "durationMinutes": 2,
+    "props": [
+      "none"
+    ],
+    "safety": "不使用他人的私人物品，也不影射现实中的玩家。"
+  },
+  {
+    "id": "voiceover",
+    "title": "现场配音",
+    "prompt": "为一位玩家正在做的普通动作即兴配音，例如把拿水杯说成冒险任务。",
+    "category": "performance",
+    "intensity": 2,
+    "durationMinutes": 2,
+    "props": [
+      "none"
+    ],
+    "safety": "只给动作配音，不评价动作是否优雅，也不模仿他人缺陷。"
+  },
+  {
+    "id": "group-photo",
+    "title": "无相机合照",
+    "prompt": "全组在五秒内摆出一个团队合照姿势，保持三秒即可。",
+    "category": "performance",
+    "intensity": 1,
+    "durationMinutes": 1,
+    "props": [
+      "none"
+    ],
+    "safety": "不要求拥挤、抱人、蹲跳或保持困难姿势。"
+  },
+  {
+    "id": "three-word-story",
+    "title": "三词故事",
+    "prompt": "随机说出三个普通词语，让下一位用它们编一句通顺的话。",
+    "category": "creative",
+    "intensity": 2,
+    "durationMinutes": 2,
+    "props": [
+      "none"
+    ],
+    "safety": "不要使用侮辱、歧视或涉及隐私的词语。"
+  },
+  {
+    "id": "thank-you-note",
+    "title": "一句感谢",
+    "prompt": "对现场任何一个人说一句具体的感谢，内容必须和今晚发生的小事有关。",
+    "category": "talk",
+    "intensity": 1,
+    "durationMinutes": 1,
+    "props": [
+      "none"
+    ],
+    "safety": "可以感谢主持人、队友或某个轻松瞬间，不强求说私人经历。"
+  },
+  {
+    "id": "mystery-director",
+    "title": "无声导演",
+    "prompt": "在一分钟内不说话，只用动作指挥另外两位玩家完成一个简单场景。",
+    "category": "team",
+    "intensity": 2,
+    "durationMinutes": 2,
+    "props": [
+      "none"
+    ],
+    "safety": "只使用安全、非接触动作，其他玩家可以随时拒绝。"
+  }
+]
