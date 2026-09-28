@@ -76,4 +76,5 @@ test('酒吧模式只推荐标记为酒吧场地的游戏', () => {
 
   assert.ok(results.length > 0);
   assert.ok(results.every((item) => item.game.venues.includes('bar')));
+  assert.ok(results.some((item) => item.game.venues.length === 1 && item.game.venues[0] === 'bar'));
 });

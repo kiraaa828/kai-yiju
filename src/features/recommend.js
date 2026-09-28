@@ -90,6 +90,11 @@ function scoreGame(game, preferences) {
     score += 2;
   }
 
+  if (preferences.venue === 'bar' && game.venues.length === 1 && game.venues[0] === 'bar') {
+    score += 60;
+    reasons.push('酒吧专属玩法');
+  }
+
   return { game, score, reasons };
 }
 
