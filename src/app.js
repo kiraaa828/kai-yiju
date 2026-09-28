@@ -25,13 +25,15 @@ const VENUE_LABELS = {
   dorm: '宿舍',
   livingRoom: '客厅',
   restaurant: '餐厅',
-  outdoor: '户外'
+  outdoor: '户外',
+  bar: '酒吧'
 };
 
 const PROP_LABELS = {
   none: '无道具',
   paperPen: '有纸笔',
-  cards: '有扑克牌'
+  cards: '有扑克牌',
+  dice: '有骰子'
 };
 
 const VIBE_LABELS = {
@@ -271,6 +273,7 @@ function renderHome() {
           <button class="button primary" data-action="navigate" data-route="/wizard">开始选择游戏</button>
           <button class="button ghost" data-action="navigate" data-route="/library">先看看全部游戏</button>
           <button class="button secondary" data-action="navigate" data-route="/interactions">打开互动挑战库</button>
+          <button class="button ghost" data-action="start-bar-mode">酒吧模式</button>
         </div>
         <div class="stat-row">
           <div class="stat"><strong>${state.games.length}</strong><span>当前游戏</span></div>
@@ -293,7 +296,7 @@ function renderHome() {
         <article class="feature-card">
           <div class="feature-icon">1</div>
           <h3>快速筛选</h3>
-          <p>按人数、场地、道具、时长、氛围和熟悉程度过滤，不再翻长文章找游戏。</p>
+          <p>按人数、模式、道具、时长和氛围过滤，不再翻长文章找游戏。</p>
         </article>
         <article class="feature-card">
           <div class="feature-icon">2</div>
@@ -313,7 +316,8 @@ function renderHome() {
 
 function renderWizard() {
   const preferences = state.preferences;
-  const propValues = ['none', 'paperPen', 'cards'];
+  const isBarMode = preferences.venue === 'bar';
+  const propValues = ['none', 'paperPen', 'cards', 'dice'];
   const vibeValues = ['icebreaker', 'funny', 'thinking', 'active', 'chat'];
 
   return `
@@ -328,6 +332,17 @@ function renderWizard() {
         <button class="button ghost small" data-action="navigate" data-route="/">返回首页</button>
       </div>
       <form id="preferences-form" class="wizard-form">
+        <div class="mode-selector">
+          <div class="mode-selector-copy">
+            <span class="field-label">选择模式</span>
+            <p>酒吧模式会隐藏普通场地，并优先推荐适合卡座的快节奏游戏。</p>
+          </div>
+          <div class="mode-selector-actions">
+            <button class="mode-option ${isBarMode ? '' : 'is-active'}" type="button" data-action="select-party-mode">聚会模式</button>
+            <button class="mode-option ${isBarMode ? 'is-active' : ''}" type="button" data-action="select-bar-mode">酒吧模式</button>
+          </div>
+        </div>
+        ${isBarMode ? '<div class="notice bar-mode-notice">喝酒完全可选，不强迫饮酒，不把酒量作为胜负或惩罚条件。</div>' : ''}
         <div class="field-grid">
           <div class="field">
             <label for="playerCount">现场有多少人？</label>
@@ -344,10 +359,11 @@ function renderWizard() {
             </select>
             <p class="field-help">第一版支持 4～12 人。</p>
           </div>
-          <div class="field">
+          <div class="field" ${isBarMode ? 'hidden' : ''}>
             <label for="venue">在哪里玩？</label>
-            <select id="venue" name="venue">
-              ${Object.entries(VENUE_LABELS).map(([value, label]) => `<option value="${value}" ${preferences.venue === value ? 'selected' : ''}>${label}</option>`).join('')}
+            ${isBarMode ? '<input type="hidden" name="venue" value="bar" />' : ''}
+            <select id="venue" name="venue" ${isBarMode ? 'disabled' : ''}>
+              ${Object.entries(VENUE_LABELS).filter(([value]) => value !== 'bar').map(([value, label]) => `<option value="${value}" ${preferences.venue === value ? 'selected' : ''}>${label}</option>`).join('')}
             </select>
           </div>
           <div class="field">
@@ -457,7 +473,7 @@ function renderResults() {
       </div>
       <div class="summary-row">
         <span class="chip">${preferences.playerCount} 人</span>
-        <span class="chip">${VENUE_LABELS[preferences.venue] ?? preferences.venue}</span>
+        <span class="chip">${preferences.venue === 'bar' ? '酒吧模式 · 喝酒可选' : VENUE_LABELS[preferences.venue] ?? preferences.venue}</span>
         <span class="chip">${preferences.maxDurationMinutes >= 999 ? '不限时长' : `${preferences.maxDurationMinutes} 分钟内`}</span>
         <span class="chip">${preferences.vibe === 'any' ? '氛围不限' : VIBE_LABELS[preferences.vibe]}</span>
         ${preferences.useAiHost ? '<span class="chip">需要 AI 主持指令</span>' : '<span class="chip">人工主持</span>'}
@@ -784,6 +800,38 @@ async function handleClick(event) {
 
   const action = target.dataset.action;
   const gameId = target.dataset.id;
+
+  if (action === 'select-bar-mode') {
+    state.preferences = {
+      ...state.preferences,
+      venue: 'bar',
+      maxDurationMinutes: Math.min(state.preferences.maxDurationMinutes, 20)
+    };
+    state.appState = saveLastPreferences(state.preferences);
+    render();
+    return;
+  }
+
+  if (action === 'select-party-mode') {
+    state.preferences = {
+      ...state.preferences,
+      venue: state.preferences.venue === 'bar' ? 'dorm' : state.preferences.venue
+    };
+    state.appState = saveLastPreferences(state.preferences);
+    render();
+    return;
+  }
+
+  if (action === 'start-bar-mode') {
+    state.preferences = {
+      ...state.preferences,
+      venue: 'bar',
+      maxDurationMinutes: 20
+    };
+    state.appState = saveLastPreferences(state.preferences);
+    navigate('/wizard');
+    return;
+  }
 
   if (action === 'navigate') {
     navigate(target.dataset.route || '/');

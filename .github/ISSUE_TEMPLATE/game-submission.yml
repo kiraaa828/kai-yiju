@@ -51,6 +51,7 @@ body:
         - label: 客厅
         - label: 餐厅
         - label: 户外
+        - label: 酒吧
 
   - type: checkboxes
     id: props
@@ -60,6 +61,7 @@ body:
         - label: 不需要道具
         - label: 纸笔
         - label: 扑克牌
+        - label: 骰子
 
   - type: checkboxes
     id: vibes

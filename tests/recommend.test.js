@@ -62,3 +62,18 @@ test('AI 主持人指令包含游戏名、暂停口令和安全要求', () => {
   assert.match(prompt, /安全提示/);
   assert.equal(buildAiHostPrompt(games.find((item) => item.id === 'action-relay')), null);
 });
+
+test('酒吧模式只推荐标记为酒吧场地的游戏', () => {
+  const results = recommendGames(games, {
+    playerCount: 6,
+    venue: 'bar',
+    availableProps: ['none', 'dice', 'cards'],
+    maxDurationMinutes: 30,
+    vibe: 'any',
+    familiarity: 'medium',
+    useAiHost: false
+  });
+
+  assert.ok(results.length > 0);
+  assert.ok(results.every((item) => item.game.venues.includes('bar')));
+});

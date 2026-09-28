@@ -12,8 +12,8 @@
 | `minPlayers` | number | 最少人数 |
 | `maxPlayers` | number | 最多人数 |
 | `durationMinutes` | [number, number] | 最短和最长预计时间 |
-| `venues` | string[] | `dorm`、`livingRoom`、`restaurant`、`outdoor` |
-| `props` | string[] | `none`、`paperPen`、`cards` |
+| `venues` | string[] | `dorm`、`livingRoom`、`restaurant`、`outdoor`、`bar` |
+| `props` | string[] | `none`、`paperPen`、`cards`、`dice` |
 | `vibes` | string[] | `icebreaker`、`funny`、`thinking`、`active`、`chat` |
 | `familiarity` | string[] | `low`、`medium`、`high`；内部元数据，第一版界面不询问 |
 | `aiHost` | object | `supported` 和 `voiceFriendly` |

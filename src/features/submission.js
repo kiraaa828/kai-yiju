@@ -13,13 +13,15 @@ const VENUE_LABELS = {
   dorm: '宿舍',
   livingRoom: '客厅',
   restaurant: '餐厅',
-  outdoor: '户外'
+  outdoor: '户外',
+  bar: '酒吧'
 };
 
 const PROP_LABELS = {
   none: '无道具',
   paperPen: '有纸笔',
-  cards: '有扑克牌'
+  cards: '有扑克牌',
+  dice: '有骰子'
 };
 
 const VIBE_LABELS = {

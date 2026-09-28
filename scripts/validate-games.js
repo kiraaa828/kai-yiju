@@ -6,8 +6,8 @@ const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const DATA_PATH = path.join(ROOT, 'src', 'data', 'games.json');
 
 const allowed = {
-  venues: new Set(['dorm', 'livingRoom', 'restaurant', 'outdoor']),
-  props: new Set(['none', 'paperPen', 'cards']),
+  venues: new Set(['dorm', 'livingRoom', 'restaurant', 'outdoor', 'bar']),
+  props: new Set(['none', 'paperPen', 'cards', 'dice']),
   vibes: new Set(['icebreaker', 'funny', 'thinking', 'active', 'chat']),
   familiarity: new Set(['low', 'medium', 'high']),
   sourceTypes: new Set(['original', 'traditional', 'adapted'])

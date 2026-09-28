@@ -13,7 +13,8 @@
       "dorm",
       "livingRoom",
       "restaurant",
-      "outdoor"
+      "outdoor",
+      "bar"
     ],
     "props": [
       "none"
@@ -69,7 +70,8 @@
       "dorm",
       "livingRoom",
       "restaurant",
-      "outdoor"
+      "outdoor",
+      "bar"
     ],
     "props": [
       "none"
@@ -127,7 +129,8 @@
       "dorm",
       "livingRoom",
       "restaurant",
-      "outdoor"
+      "outdoor",
+      "bar"
     ],
     "props": [
       "none"
@@ -242,7 +245,8 @@
       "dorm",
       "livingRoom",
       "restaurant",
-      "outdoor"
+      "outdoor",
+      "bar"
     ],
     "props": [
       "none"
@@ -300,7 +304,8 @@
       "dorm",
       "livingRoom",
       "restaurant",
-      "outdoor"
+      "outdoor",
+      "bar"
     ],
     "props": [
       "none"
@@ -358,7 +363,8 @@
       "dorm",
       "livingRoom",
       "restaurant",
-      "outdoor"
+      "outdoor",
+      "bar"
     ],
     "props": [
       "none"
@@ -417,7 +423,8 @@
       "dorm",
       "livingRoom",
       "restaurant",
-      "outdoor"
+      "outdoor",
+      "bar"
     ],
     "props": [
       "none"
@@ -476,7 +483,8 @@
       "dorm",
       "livingRoom",
       "restaurant",
-      "outdoor"
+      "outdoor",
+      "bar"
     ],
     "props": [
       "none"
@@ -534,7 +542,8 @@
       "dorm",
       "livingRoom",
       "restaurant",
-      "outdoor"
+      "outdoor",
+      "bar"
     ],
     "props": [
       "none"
@@ -707,7 +716,8 @@
       "dorm",
       "livingRoom",
       "restaurant",
-      "outdoor"
+      "outdoor",
+      "bar"
     ],
     "props": [
       "none"
@@ -765,7 +775,8 @@
       "dorm",
       "livingRoom",
       "restaurant",
-      "outdoor"
+      "outdoor",
+      "bar"
     ],
     "props": [
       "none"
@@ -823,7 +834,8 @@
       "dorm",
       "livingRoom",
       "restaurant",
-      "outdoor"
+      "outdoor",
+      "bar"
     ],
     "props": [
       "none"
@@ -882,7 +894,8 @@
       "dorm",
       "livingRoom",
       "restaurant",
-      "outdoor"
+      "outdoor",
+      "bar"
     ],
     "props": [
       "none"
@@ -941,7 +954,8 @@
       "dorm",
       "livingRoom",
       "restaurant",
-      "outdoor"
+      "outdoor",
+      "bar"
     ],
     "props": [
       "cards"
@@ -999,7 +1013,8 @@
       "dorm",
       "livingRoom",
       "restaurant",
-      "outdoor"
+      "outdoor",
+      "bar"
     ],
     "props": [
       "none"
@@ -1045,8 +1060,8 @@
   },
   {
     "id": "seven-count",
-    "name": "数字七令",
-    "pitch": "按顺序报数，但遇到七的倍数或含七的数字必须拍手。",
+    "name": "逢七过",
+    "pitch": "按顺序报数，遇到七的倍数或含七的数字就拍手。",
     "minPlayers": 4,
     "maxPlayers": 12,
     "durationMinutes": [
@@ -1057,7 +1072,8 @@
       "dorm",
       "livingRoom",
       "restaurant",
-      "outdoor"
+      "outdoor",
+      "bar"
     ],
     "props": [
       "none"
@@ -1170,7 +1186,8 @@
     ],
     "venues": [
       "dorm",
-      "livingRoom"
+      "livingRoom",
+      "bar"
     ],
     "props": [
       "none"
@@ -1212,6 +1229,409 @@
       "歌单由主持人自行选择，项目不分发或存储受版权保护的音频。",
       "避免使用带有歧视、侮辱或露骨内容的歌曲。",
       "不强迫玩家唱歌，也不因为答错进行惩罚。"
+    ],
+    "source": {
+      "type": "original",
+      "url": null
+    }
+  },
+  {
+    "id": "visit-three-gardens",
+    "name": "逛三园",
+    "pitch": "轮流说出指定园区里的东西，重复或接不上的人淘汰。",
+    "minPlayers": 4,
+    "maxPlayers": 12,
+    "durationMinutes": [
+      10,
+      20
+    ],
+    "venues": [
+      "bar",
+      "dorm",
+      "livingRoom",
+      "restaurant",
+      "outdoor"
+    ],
+    "props": [
+      "none"
+    ],
+    "vibes": [
+      "funny",
+      "thinking",
+      "active"
+    ],
+    "familiarity": [
+      "low",
+      "medium",
+      "high"
+    ],
+    "aiHost": {
+      "supported": true,
+      "voiceFriendly": true
+    },
+    "rules": [
+      "主持人先说出“星期天，逛三园”，玩家一起问“什么园”。",
+      "主持人选择动物园、果园、菜园或自定园区。",
+      "玩家按顺序说出该园区里的一个东西，不能重复。",
+      "卡住、重复或说出不符合园区的答案时暂时退出，最后留下的玩家获胜。"
+    ],
+    "hostSteps": [
+      "先选择一个大家熟悉的园区，并说明答案规则。",
+      "用“星期天，逛三园”作为每轮开场。",
+      "每次只让一位玩家回答，出现争议时让大家快速投票。",
+      "淘汰玩家可以继续当裁判，不要求接受惩罚。"
+    ],
+    "variations": [
+      "使用电影、校园、厨房或旅行目的地作为园区。",
+      "允许玩家回答后加一个动作。",
+      "使用团队模式，每队轮流派一人回答。"
+    ],
+    "safety": [
+      "不使用政治、宗教或真实个人隐私作为园区。",
+      "允许玩家跳过，且不进行酒精惩罚。"
+    ],
+    "source": {
+      "type": "traditional",
+      "url": null
+    }
+  },
+  {
+    "id": "liar-dice",
+    "name": "吹牛骰子",
+    "pitch": "隐藏自己的骰子，通过叫数和质疑找出谁在吹牛。",
+    "minPlayers": 4,
+    "maxPlayers": 8,
+    "durationMinutes": [
+      15,
+      30
+    ],
+    "venues": [
+      "bar",
+      "livingRoom"
+    ],
+    "props": [
+      "dice"
+    ],
+    "vibes": [
+      "funny",
+      "thinking",
+      "chat"
+    ],
+    "familiarity": [
+      "medium",
+      "high"
+    ],
+    "aiHost": {
+      "supported": false,
+      "voiceFriendly": false
+    },
+    "rules": [
+      "每位玩家拿两枚骰子和一个杯子，摇完后只查看自己的点数。",
+      "第一位玩家叫出一个数量和点数，例如“三个四点”。",
+      "下一位必须提高数量，或在数量相同时提高点数。",
+      "任何玩家都可以质疑上一个叫数，所有人公开骰子；叫数不成立则叫数者失去一枚骰子，成立则质疑者失去一枚骰子。",
+      "骰子全部失去的玩家退出，最后剩下的玩家获胜。"
+    ],
+    "hostSteps": [
+      "说明本轮不使用金钱、酒精或其他赌注。",
+      "确认每位玩家都有两枚骰子和一个杯子。",
+      "按顺序叫数，提醒下一位必须叫得更大。",
+      "有人质疑时公开骰子，确认结果后开始下一轮。"
+    ],
+    "variations": [
+      "使用三枚骰子增加计算难度。",
+      "一点可以作为万能点数，也可以规定一点不能当万能。",
+      "两人组队共享骰子，降低淘汰压力。"
+    ],
+    "safety": [
+      "禁止使用金钱、酒量或危险挑战作为赌注。",
+      "玩家可以随时改为只参与叫数，不承担淘汰结果。"
+    ],
+    "source": {
+      "type": "traditional",
+      "url": null
+    }
+  },
+  {
+    "id": "dice-duel",
+    "name": "骰子对决",
+    "pitch": "两队轮流掷两枚骰子，点数更高的赢下一轮。",
+    "minPlayers": 4,
+    "maxPlayers": 12,
+    "durationMinutes": [
+      10,
+      20
+    ],
+    "venues": [
+      "bar",
+      "dorm",
+      "livingRoom"
+    ],
+    "props": [
+      "dice"
+    ],
+    "vibes": [
+      "funny",
+      "active"
+    ],
+    "familiarity": [
+      "low",
+      "medium",
+      "high"
+    ],
+    "aiHost": {
+      "supported": false,
+      "voiceFriendly": false
+    },
+    "rules": [
+      "玩家分成两队，每轮各派一名代表掷两枚骰子。",
+      "两队点数总和更高的一方获得一分，平局重新掷。",
+      "先获得五分的一方获胜。",
+      "输掉一轮的队伍从互动库中选择一个安全挑战，也可以直接跳过。"
+    ],
+    "hostSteps": [
+      "先确认两队和每轮代表顺序。",
+      "每轮同时公布两枚骰子的点数。",
+      "记录总分，平局时只重掷一次。",
+      "挑战必须来自安全互动库，不允许用喝酒作为惩罚。"
+    ],
+    "variations": [
+      "使用三枚骰子。",
+      "点数相同时比较单枚最大点数。",
+      "失败队伍可以选择猜拳替代挑战。"
+    ],
+    "safety": [
+      "不使用金钱、酒精或危险动作为输赢代价。",
+      "不想参加挑战的玩家可以直接跳过。"
+    ],
+    "source": {
+      "type": "original",
+      "url": null
+    }
+  },
+  {
+    "id": "dice-stage",
+    "name": "骰子舞台",
+    "pitch": "两枚骰子决定情绪和场景，十秒内表演出来。",
+    "minPlayers": 3,
+    "maxPlayers": 10,
+    "durationMinutes": [
+      10,
+      20
+    ],
+    "venues": [
+      "bar",
+      "dorm",
+      "livingRoom"
+    ],
+    "props": [
+      "dice"
+    ],
+    "vibes": [
+      "funny",
+      "active"
+    ],
+    "familiarity": [
+      "medium",
+      "high"
+    ],
+    "aiHost": {
+      "supported": false,
+      "voiceFriendly": false
+    },
+    "rules": [
+      "第一枚骰子决定情绪：1 开心、2 生气、3 紧张、4 困倦、5 惊讶、6 得意。",
+      "第二枚骰子决定场景：1 点单、2 找手机、3 等车、4 拍照、5 开会、6 唱歌。",
+      "玩家有十秒准备，然后用十秒表演这个组合。",
+      "其他玩家猜情绪和场景，猜中一个得一分。"
+    ],
+    "hostSteps": [
+      "提前展示两枚骰子的对照表。",
+      "让玩家掷骰子并确认情绪和场景。",
+      "控制十秒准备和十秒表演时间。",
+      "每轮结束后换下一位玩家。"
+    ],
+    "variations": [
+      "加入第三个场景类别，例如餐厅、教室或旅行。",
+      "要求表演者不能说话。",
+      "两人一组同时表演。"
+    ],
+    "safety": [
+      "不模仿真实认识的人，不表演侮辱或危险场景。",
+      "玩家可以重掷或直接跳过。"
+    ],
+    "source": {
+      "type": "original",
+      "url": null
+    }
+  },
+  {
+    "id": "card-high-low",
+    "name": "大小预言",
+    "pitch": "看完一张牌后，预测下一张会更大还是更小。",
+    "minPlayers": 4,
+    "maxPlayers": 12,
+    "durationMinutes": [
+      5,
+      15
+    ],
+    "venues": [
+      "bar",
+      "dorm",
+      "livingRoom",
+      "restaurant"
+    ],
+    "props": [
+      "cards"
+    ],
+    "vibes": [
+      "funny",
+      "thinking"
+    ],
+    "familiarity": [
+      "low",
+      "medium",
+      "high"
+    ],
+    "aiHost": {
+      "supported": false,
+      "voiceFriendly": false
+    },
+    "rules": [
+      "A 到 K 分别按 1 到 13 计算。",
+      "每轮先公开一张牌，每位玩家用手势预测下一张更大或更小。",
+      "主持人翻出下一张牌，猜对的人获得一分。",
+      "连续进行十轮，分数最高的人获胜。"
+    ],
+    "hostSteps": [
+      "先说明 A 最小、K 最大，点数相同时不得分。",
+      "每次公开一张基准牌。",
+      "给所有玩家三秒做出更大或更小的手势。",
+      "翻牌并记录分数，十轮后公布结果。"
+    ],
+    "variations": [
+      "加入“相同”选项，猜中得两分。",
+      "只使用 A 到 7，增加出现平局的概率。",
+      "使用团队累计分数。"
+    ],
+    "safety": [
+      "不使用金钱或酒精作为筹码。",
+      "不想参与预测的玩家可以负责翻牌和计分。"
+    ],
+    "source": {
+      "type": "original",
+      "url": null
+    }
+  },
+  {
+    "id": "card-emotion",
+    "name": "扑克表情牌",
+    "pitch": "用扑克牌的花色决定情绪，表演一句普通台词。",
+    "minPlayers": 4,
+    "maxPlayers": 10,
+    "durationMinutes": [
+      10,
+      20
+    ],
+    "venues": [
+      "bar",
+      "dorm",
+      "livingRoom"
+    ],
+    "props": [
+      "cards"
+    ],
+    "vibes": [
+      "funny",
+      "active"
+    ],
+    "familiarity": [
+      "medium",
+      "high"
+    ],
+    "aiHost": {
+      "supported": false,
+      "voiceFriendly": false
+    },
+    "rules": [
+      "红桃代表开心，黑桃代表紧张，方块代表自信，梅花代表无奈。",
+      "玩家抽一张牌，根据花色选择情绪。",
+      "玩家用这种情绪说一句普通台词，例如“我到家了”。",
+      "其他玩家猜花色对应的情绪，猜中后才公布牌面。"
+    ],
+    "hostSteps": [
+      "展示花色和情绪的对照表。",
+      "让玩家抽牌，不要把牌面给别人看。",
+      "玩家表演一句台词后，邀请其他人猜情绪。",
+      "猜完后再公布花色并换下一位。"
+    ],
+    "variations": [
+      "使用数字决定台词的语速或音量。",
+      "两个人用不同情绪进行一段短对话。",
+      "加入机器人、主持人和电影角色等身份。"
+    ],
+    "safety": [
+      "不模仿真实认识的人，不嘲笑他人的声音和外貌。",
+      "玩家可以换牌或跳过。"
+    ],
+    "source": {
+      "type": "original",
+      "url": null
+    }
+  },
+  {
+    "id": "card-quick-answer",
+    "name": "牌面快答",
+    "pitch": "牌面决定类别和回答数量，在五秒内说出对应数量的答案。",
+    "minPlayers": 4,
+    "maxPlayers": 10,
+    "durationMinutes": [
+      10,
+      20
+    ],
+    "venues": [
+      "bar",
+      "dorm",
+      "livingRoom",
+      "restaurant"
+    ],
+    "props": [
+      "cards"
+    ],
+    "vibes": [
+      "thinking",
+      "funny",
+      "chat"
+    ],
+    "familiarity": [
+      "low",
+      "medium",
+      "high"
+    ],
+    "aiHost": {
+      "supported": false,
+      "voiceFriendly": false
+    },
+    "rules": [
+      "红桃回答喜欢的东西，黑桃回答能做的动作，方块回答去过或想去的地方，梅花自由联想一个类别。",
+      "玩家抽一张牌，根据点数决定回答数量：A 代表 1 个，2～5 按牌面，6～10 代表 3 个，J、Q、K 代表 4 个。",
+      "玩家有五秒时间说出对应数量的答案。",
+      "其他玩家只判断数量是否完成，不评价答案好坏。"
+    ],
+    "hostSteps": [
+      "先说明花色和回答数量的对照表。",
+      "抽牌后立即开始五秒倒计时。",
+      "只统计有效答案数量，不追问隐私。",
+      "完成后换下一位玩家。"
+    ],
+    "variations": [
+      "把五秒改为十秒，降低难度。",
+      "允许下一位玩家先指定类别。",
+      "使用团队轮流补答。"
+    ],
+    "safety": [
+      "不使用私人经历、收入、感情和家庭情况作为题目。",
+      "允许玩家无理由跳过。"
     ],
     "source": {
       "type": "original",
