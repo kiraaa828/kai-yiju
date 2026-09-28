@@ -342,7 +342,7 @@ function renderWizard() {
             <button class="mode-option ${isBarMode ? 'is-active' : ''}" type="button" data-action="select-bar-mode">酒吧模式</button>
           </div>
         </div>
-        ${isBarMode ? '<div class="notice bar-mode-notice">喝酒完全可选，不强迫饮酒。饮品挑战默认最多一口，可换水或无酒精饮料，不做连续饮酒。</div>' : ''}
+        ${isBarMode ? '<div class="notice bar-mode-notice">酒吧模式默认启用骰子和扑克牌。喝酒完全可选，不强迫饮酒；饮品挑战默认最多一口，可换水或无酒精饮料。</div>' : ''}
         <div class="field-grid">
           <div class="field">
             <label for="playerCount">现场有多少人？</label>
@@ -805,7 +805,8 @@ async function handleClick(event) {
     state.preferences = {
       ...state.preferences,
       venue: 'bar',
-      maxDurationMinutes: 30
+      maxDurationMinutes: 30,
+      availableProps: [...new Set([...state.preferences.availableProps, 'none', 'dice', 'cards'])]
     };
     state.appState = saveLastPreferences(state.preferences);
     render();
@@ -826,7 +827,8 @@ async function handleClick(event) {
     state.preferences = {
       ...state.preferences,
       venue: 'bar',
-      maxDurationMinutes: 30
+      maxDurationMinutes: 30,
+      availableProps: [...new Set([...state.preferences.availableProps, 'none', 'dice', 'cards'])]
     };
     state.appState = saveLastPreferences(state.preferences);
     navigate('/wizard');
@@ -1203,4 +1205,5 @@ function render() {
 
   app.innerHTML = content;
 }
+
 
