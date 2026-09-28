@@ -10,7 +10,8 @@ const PROP_OPTIONS = [
   ['none', '无道具'],
   ['paperPen', '有纸笔'],
   ['cards', '有扑克牌'],
-  ['dice', '有骰子']
+  ['dice', '有骰子'],
+  ['stickyNotes', '有便利贴']
 ];
 
 const VIBE_OPTIONS = [

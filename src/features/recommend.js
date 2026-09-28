@@ -20,11 +20,17 @@ function passesHardFilters(game, preferences) {
     excludeIds = []
   } = preferences;
 
-  if (playerCount < game.minPlayers || playerCount > game.maxPlayers) {
+  const isBarMode = venue === 'bar';
+  const playerTolerance = isBarMode ? 2 : 0;
+
+  if (
+    playerCount < game.minPlayers - playerTolerance ||
+    playerCount > game.maxPlayers + playerTolerance
+  ) {
     return false;
   }
 
-  if (venue && !game.venues.includes(venue)) {
+  if (!isBarMode && venue && !game.venues.includes(venue)) {
     return false;
   }
 
@@ -98,9 +104,25 @@ function scoreGame(game, preferences) {
     reasons.push('使用了你选择的道具');
   }
 
-  if (preferences.venue === 'bar' && game.venues.length === 1 && game.venues[0] === 'bar') {
-    score += 60;
-    reasons.push('酒吧专属玩法');
+  if (preferences.venue === 'bar') {
+    const playerCount = Number(preferences.playerCount);
+    const isExactPlayerMatch = playerCount >= game.minPlayers && playerCount <= game.maxPlayers;
+
+    if (game.venues.includes('bar')) {
+      score += 25;
+      reasons.push('适合酒吧场景');
+    }
+
+    if (game.venues.length === 1 && game.venues[0] === 'bar') {
+      score += 60;
+      reasons.push('酒吧专属玩法');
+    }
+
+    if (isExactPlayerMatch) {
+      score += 15;
+    } else {
+      score -= 10;
+    }
   }
 
   return { game, score, reasons };

@@ -33,7 +33,8 @@ const PROP_LABELS = {
   none: '无道具',
   paperPen: '有纸笔',
   cards: '有扑克牌',
-  dice: '有骰子'
+  dice: '有骰子',
+  stickyNotes: '有便利贴'
 };
 
 const VIBE_LABELS = {
@@ -317,7 +318,7 @@ function renderHome() {
 function renderWizard() {
   const preferences = state.preferences;
   const isBarMode = preferences.venue === 'bar';
-  const propValues = ['none', 'paperPen', 'cards', 'dice'];
+  const propValues = ['none', 'paperPen', 'cards', 'dice', 'stickyNotes'];
   const vibeValues = ['icebreaker', 'funny', 'thinking', 'active', 'chat'];
 
   return `
@@ -342,7 +343,7 @@ function renderWizard() {
             <button class="mode-option ${isBarMode ? 'is-active' : ''}" type="button" data-action="select-bar-mode">酒吧模式</button>
           </div>
         </div>
-        ${isBarMode ? '<div class="notice bar-mode-notice">酒吧模式默认启用骰子和扑克牌。喝酒完全可选，不强迫饮酒；饮品挑战默认最多一口，可换水或无酒精饮料。</div>' : ''}
+        ${isBarMode ? '<div class="notice bar-mode-notice">酒吧模式默认启用骰子、扑克牌、纸笔和便利贴，并宽松匹配人数和场地。喝酒完全可选，不强迫饮酒；饮品挑战默认最多一口，可换水或无酒精饮料。</div>' : ''}
         <div class="field-grid">
           <div class="field">
             <label for="playerCount">现场有多少人？</label>
@@ -806,7 +807,7 @@ async function handleClick(event) {
       ...state.preferences,
       venue: 'bar',
       maxDurationMinutes: 30,
-      availableProps: [...new Set([...state.preferences.availableProps, 'none', 'dice', 'cards'])]
+      availableProps: [...new Set([...state.preferences.availableProps, 'none', 'paperPen', 'cards', 'dice', 'stickyNotes'])]
     };
     state.appState = saveLastPreferences(state.preferences);
     render();
@@ -828,7 +829,7 @@ async function handleClick(event) {
       ...state.preferences,
       venue: 'bar',
       maxDurationMinutes: 30,
-      availableProps: [...new Set([...state.preferences.availableProps, 'none', 'dice', 'cards'])]
+      availableProps: [...new Set([...state.preferences.availableProps, 'none', 'paperPen', 'cards', 'dice', 'stickyNotes'])]
     };
     state.appState = saveLastPreferences(state.preferences);
     navigate('/wizard');
@@ -1205,5 +1206,3 @@ function render() {
 
   app.innerHTML = content;
 }
-
-
