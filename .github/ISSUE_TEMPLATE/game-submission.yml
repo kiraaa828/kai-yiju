@@ -1,0 +1,141 @@
+name: 游戏投稿
+description: 向“开一局”投稿一个适合线下聚会的小游戏
+title: "[游戏投稿] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        感谢投稿。请只提交原创描述或有权使用的公共玩法，不要复制其他网站、商业桌游或付费应用的大段规则。
+
+        提交后由维护者审核，通过后会加入游戏库。
+
+  - type: input
+    id: game-name
+    attributes:
+      label: 游戏名称
+      placeholder: 例如：宿舍默契问答
+    validations:
+      required: true
+
+  - type: textarea
+    id: pitch
+    attributes:
+      label: 一句话介绍
+      description: 用一句话说清楚游戏怎么玩。
+      placeholder: 两个人同时说出答案，看看谁更有默契。
+    validations:
+      required: true
+
+  - type: input
+    id: player-range
+    attributes:
+      label: 人数范围
+      placeholder: 例如：4～12 人
+    validations:
+      required: true
+
+  - type: input
+    id: duration
+    attributes:
+      label: 游戏时长
+      placeholder: 例如：10～20 分钟
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: venues
+    attributes:
+      label: 适合场地
+      options:
+        - label: 宿舍
+        - label: 客厅
+        - label: 餐厅
+        - label: 户外
+
+  - type: checkboxes
+    id: props
+    attributes:
+      label: 需要道具
+      options:
+        - label: 不需要道具
+        - label: 纸笔
+        - label: 扑克牌
+
+  - type: checkboxes
+    id: vibes
+    attributes:
+      label: 适合气氛
+      options:
+        - label: 破冰
+        - label: 搞笑
+        - label: 动脑
+        - label: 活跃
+        - label: 聊天
+
+  - type: dropdown
+    id: ai-host
+    attributes:
+      label: AI 主持支持
+      options:
+        - 支持生成 AI 主持人指令
+        - 建议人工主持
+    validations:
+      required: true
+
+  - type: textarea
+    id: rules
+    attributes:
+      label: 游戏规则
+      description: 请填写 1～5 条，每条单独一行。
+    validations:
+      required: true
+
+  - type: textarea
+    id: host-steps
+    attributes:
+      label: 主持人步骤
+      description: 请填写 2～6 条，每条单独一行。
+    validations:
+      required: true
+
+  - type: textarea
+    id: variations
+    attributes:
+      label: 可选变体
+      description: 可以留空。
+
+  - type: textarea
+    id: safety
+    attributes:
+      label: 安全边界
+      description: 例如不公开隐私、允许无理由跳过、不做危险动作。
+    validations:
+      required: true
+
+  - type: dropdown
+    id: source-type
+    attributes:
+      label: 内容来源
+      options:
+        - 原创
+        - 传统公共玩法
+        - 公共玩法改编
+    validations:
+      required: true
+
+  - type: input
+    id: source-url
+    attributes:
+      label: 来源链接
+      description: 可选。如果有来源，请填写链接。
+      placeholder: https://...
+
+  - type: checkboxes
+    id: rights
+    attributes:
+      label: 投稿确认
+      options:
+        - label: 我确认规则为原创描述或有权使用，没有复制其他网站、商业桌游或付费应用的大段规则。
+          required: true
+        - label: 我确认内容不包含隐私追问、危险动作、酒精强制机制或羞辱性惩罚。
+          required: true

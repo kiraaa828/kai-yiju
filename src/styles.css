@@ -75,6 +75,7 @@ select:focus-visible {
 
 .brand {
   display: inline-flex;
+  flex: 0 0 auto;
   align-items: center;
   gap: 10px;
   border: 0;
@@ -84,6 +85,7 @@ select:focus-visible {
   font-size: 1.12rem;
   font-weight: 900;
   letter-spacing: 0.02em;
+  white-space: nowrap;
 }
 
 .brand-mark {
@@ -419,8 +421,9 @@ select:focus-visible {
   font-size: 0.84rem;
 }
 
-input[type="number"],
-select {
+.field input:not([type="checkbox"]),
+select,
+textarea {
   width: 100%;
   min-height: 48px;
   border: 1px solid var(--line);
@@ -428,6 +431,24 @@ select {
   padding: 0 14px;
   color: var(--ink);
   background: var(--surface-strong);
+}
+
+textarea {
+  min-height: 120px;
+  padding: 12px 14px;
+  resize: vertical;
+  line-height: 1.6;
+}
+
+.submission-errors {
+  margin-top: 18px;
+  border-color: rgba(232, 93, 63, 0.32);
+  color: var(--accent-dark);
+  background: var(--accent-soft);
+}
+
+.submission-errors[hidden] {
+  display: none;
 }
 
 .checkbox-grid {

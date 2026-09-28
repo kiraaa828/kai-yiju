@@ -13,6 +13,7 @@
 - 游戏详情和主持步骤
 - 可复制到豆包等 AI 工具的“AI 主持人指令”
 - 非羞辱性的破冰互动库
+- GitHub Issue 游戏投稿页面
 - 本地收藏、最近玩过和不喜欢记录
 - Node 内置测试和数据校验
 - GitHub Pages 自动部署配置
@@ -73,6 +74,8 @@ node scripts/validate-data.js
 │   └── features/
 │       ├── ai-host.js
 │       ├── interactions.js
+│       ├── submission-view.js
+│       ├── submission.js
 │       ├── recommend.js
 │       └── storage.js
 ├── scripts/
@@ -97,5 +100,7 @@ node scripts/validate-data.js
 ## 贡献
 
 请先阅读 [CONTRIBUTING.md](./CONTRIBUTING.md)、[docs/game-schema.md](./docs/game-schema.md) 和 [docs/interaction-schema.md](./docs/interaction-schema.md)。
+
+也可以通过网站内的 [投稿页面](https://kiraaa828.github.io/kai-yiju/#/submit) 或 [GitHub Issue 模板](https://github.com/kiraaa828/kai-yiju/issues/new/choose) 提交新游戏。
 
 不要直接复制其他网站、商业桌游或付费应用的大段规则。所有新增游戏都需要用原创描述改写，并尽量实际测试。

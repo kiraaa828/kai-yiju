@@ -7,6 +7,13 @@ import {
   INTERACTION_INTENSITY_LABELS
 } from './features/interactions.js';
 import {
+  buildSubmissionIssueUrl,
+  resolveRepository,
+  submissionFromFormData,
+  validateGameSubmission
+} from './features/submission.js';
+import { renderSubmissionPage } from './features/submission-view.js';
+import {
   loadAppState,
   recordPlayed,
   saveLastPreferences,
@@ -103,6 +110,10 @@ function getRoute() {
 
   if (segments[0] === 'interactions') {
     return { name: 'interactions' };
+  }
+
+  if (segments[0] === 'submit') {
+    return { name: 'submit' };
   }
 
   if (segments[0] === 'game' && segments[1]) {
@@ -231,6 +242,7 @@ function renderTopbar() {
       <nav class="nav-actions" aria-label="主导航">
         <button class="button ghost small" data-action="navigate" data-route="/library">游戏库</button>
         <button class="button ghost small" data-action="navigate" data-route="/interactions">互动库</button>
+        <button class="button ghost small" data-action="navigate" data-route="/submit">投稿</button>
         <button class="button primary small" data-action="navigate" data-route="/wizard">开始选择</button>
       </nav>
     </header>
@@ -700,6 +712,34 @@ function preferencesFromForm(form) {
   };
 }
 
+function handleSubmissionSubmit(event) {
+  if (event.target.id !== 'submission-form') {
+    return;
+  }
+
+  event.preventDefault();
+  const submission = submissionFromFormData(new FormData(event.target));
+  const errors = validateGameSubmission(submission);
+  const errorBox = document.querySelector('#submission-errors');
+
+  if (errors.length > 0) {
+    errorBox.hidden = false;
+    errorBox.textContent = errors.join('；');
+    errorBox.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    return;
+  }
+
+  errorBox.hidden = true;
+  const issueUrl = buildSubmissionIssueUrl(resolveRepository(), submission);
+  const issueWindow = window.open(issueUrl, '_blank', 'noopener,noreferrer');
+
+  if (!issueWindow) {
+    window.location.href = issueUrl;
+  }
+
+  showToast('已打开 GitHub 投稿页面，请确认内容后提交 Issue。');
+}
+
 function runRecommendations(excludeIds = []) {
   const preferences = {
     ...state.preferences,
@@ -945,6 +985,7 @@ async function bootstrap() {
 
     app.addEventListener('click', handleClick);
     app.addEventListener('submit', handlePreferencesSubmit);
+    app.addEventListener('submit', handleSubmissionSubmit);
     app.addEventListener('reset', (event) => {
       if (event.target.id === 'preferences-form') {
         event.preventDefault();
@@ -1076,6 +1117,15 @@ function renderInteractions() {
   `;
 }
 
+function renderSubmission() {
+  return renderSubmissionPage({
+    topbar: renderTopbar(),
+    footer: renderFooter(),
+    repository: resolveRepository(),
+    escapeHtml
+  });
+}
+
 function render() {
   const route = getRoute();
 
@@ -1093,6 +1143,8 @@ function render() {
     content = renderLibrary();
   } else if (route.name === 'interactions') {
     content = renderInteractions();
+  } else if (route.name === 'submit') {
+    content = renderSubmission();
   } else if (route.name === 'game') {
     content = renderGameDetail(route.id);
   } else if (route.name === 'host') {
