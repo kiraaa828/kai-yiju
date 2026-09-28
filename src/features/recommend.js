@@ -55,6 +55,7 @@ function scoreGame(game, preferences) {
     vibe = 'any',
     useAiHost = false,
     recentIds = [],
+    availableProps = ['none'],
     maxDurationMinutes = Number.POSITIVE_INFINITY
   } = preferences;
 
@@ -88,6 +89,13 @@ function scoreGame(game, preferences) {
 
   if (game.familiarity.includes('low')) {
     score += 2;
+  }
+
+  const selectedProps = availableProps.filter((prop) => prop !== 'none');
+
+  if (selectedProps.length > 0 && game.props.some((prop) => selectedProps.includes(prop))) {
+    score += 80;
+    reasons.push('使用了你选择的道具');
   }
 
   if (preferences.venue === 'bar' && game.venues.length === 1 && game.venues[0] === 'bar') {
